@@ -1,24 +1,19 @@
-Enunciado
-Crea una aplicación para buscar películas
+# Movies for you
 
-API a usar: - https://www.omdbapi.com/ Consigue la API Key en la propia página web registrando tu email. key: c24721ce
+Consiste en una aplicación para buscar películas
+
+Se utilizó la API: https://www.omdbapi.com/ con la API KEY solicitada.
  
-Requerimientos:
+Aplicación:
 
-✅ Necesita mostrar un input para buscar la película y un botón para buscar.
+✅ Input y botón de búsqueda.
 
-✅ Lista las películas y muestra el título, año y poster.
+✅ Listado de las películas con título, año e imagen.
 
-✅ Que el formulario funcione
+✅ Formulario funcional.
 
-✅ Haz que las películas se muestren en un grid responsive.
+✅ Grid responsive.
 
-✅ Hacer el fetching de datos a la API
+✅ Fetching de datos a la API.
 
-Primera iteración:
-
-✅ Evitar que se haga la misma búsqueda dos veces seguidas.
-
-✅ Haz que la búsqueda se haga automáticamente al escribir.
-
-✅ Evita que se haga la búsqueda continuamente al escribir (debounce)
+Se trabajó con Vite, Tailwind y react-router-dom.
