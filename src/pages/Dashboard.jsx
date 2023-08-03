@@ -28,7 +28,7 @@ const Dashboard = () => {
     <>
       <NavBar />
       <header className="flex flex-col items-center mt-5 gap-5">
-        <h1 className="font-semibold text-2xl">¿Qué estás buscando?</h1>
+        <h1 className="text-2xl">¿Qué estás buscando?</h1>
         <form onSubmit={handleSubmit} className="flex items-center gap-3">
           <input
             className="border-2 border-blue-700 rounded p-2 text-black"

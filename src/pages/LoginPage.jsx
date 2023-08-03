@@ -29,29 +29,32 @@ const LoginPage = () => {
       <main className="flex flex-col items-center text-center gap-5">
         <div>
           <h1 className="font-primary text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-white">MOVIES FOR YOU</h1>
-          <p>Inicie sesión para comenzar a navegar</p>
+          <h2>¡Comience una aventura!</h2>
         </div>
         <form
-          className="flex flex-col items-center gap-2"
+          className="flex flex-col gap-2 text-start"
           onSubmit={handleSubmit}
         >
+          <label htmlFor="email">Correo electrónico</label>
           <input
             className="border-2 border-blue-500 rounded p-2 text-black"
             type="email"
+            name="email"
             placeholder="correo@email.com"
             autoComplete="on"
             value={email}
             onChange={handleChangeEmail}
           />
+          <label htmlFor="password">Contraseña</label>
           <input
             className="border-2 border-blue-700 rounded p-2 text-black"
             type="password"
-            placeholder="password"
+            name="password"
             autoComplete="off"
             value={password}
             onChange={handleChangePassword}
           />
-          <button className="bg-blue-800 hover:bg-blue-700 text-white font-medium rounded py-1 px-2 mr-1">
+          <button className="bg-blue-800 hover:bg-blue-700 text-white font-medium rounded py-1 px-2 mt-2">
             INICIAR SESIÓN
           </button>
           <p className="text-red-600 font-semibold h-6">{error}</p>
