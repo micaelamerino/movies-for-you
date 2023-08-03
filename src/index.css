@@ -19,5 +19,13 @@ body  {
 }
 
 h1{
-    font-family: Bebas;
+    font-family: Bebas; 
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+.login-title{
+    font-size: 3.5rem;
 }
