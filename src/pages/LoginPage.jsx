@@ -25,11 +25,12 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center">
-      <main className="flex flex-col items-center text-center gap-5">
+    <main className="login-container h-screen flex flex-col justify-center text-center items-center gap-5">
         <div className="mb-5">
-          <h1 className="login-title font-primary text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-white">MOVIES FOR YOU</h1>
-          <h2>¡Que comience la aventura!</h2>
+          <h1 className="text-6xl font-primary  text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-200">
+            MOVIES FOR YOU
+          </h1>
+          <h2 className="text-2xl">¡El cine en tu hogar!</h2>
         </div>
         <form
           className="flex flex-col gap-2 text-start mt-5"
@@ -39,7 +40,7 @@ const LoginPage = () => {
           <input
             className="border-2 border-blue-500 rounded p-2 text-black"
             type="email"
-            name="email"
+            id="email"
             autoComplete="on"
             value={email}
             onChange={handleChangeEmail}
@@ -48,7 +49,7 @@ const LoginPage = () => {
           <input
             className="border-2 border-blue-700 rounded p-2 text-black"
             type="password"
-            name="password"
+            id="password"
             autoComplete="off"
             value={password}
             onChange={handleChangePassword}
@@ -59,7 +60,6 @@ const LoginPage = () => {
           <p className="text-red-600 font-semibold h-6">{error}</p>
         </form>
       </main>
-    </div>
   );
 };
 

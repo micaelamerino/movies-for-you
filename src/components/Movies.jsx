@@ -6,7 +6,7 @@ function ListOfMovies({ movies }) {
           <div key={m.id} className="flex flex-col flex-wrap items-center text-center">
             <h3 className="font-medium text-lg">{m.title}</h3>
             <p className="font-medium">{m.year}</p>
-            <img className="w-56 h-68" src={m.img} alt={m.title} />
+            <img className="w-56 h-68" src={m.img} alt={`Portada de la película ${m.title}`} />
           </div>
         ))}
     </main>
@@ -14,7 +14,7 @@ function ListOfMovies({ movies }) {
 }
 
 function NoMoviesResults() {
-  return <h3>No hay resultados para esta búsqueda</h3>;
+  return <p className="text-red-600 font-semibold text-center">No hay resultados para esta búsqueda, pruebe con otro título</p>;
 }
 
 export function Movies({ movies }) {
